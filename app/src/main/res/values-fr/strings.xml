@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GSB</string>
+    <string name="login_label">Authentification</string>
+    <string name="username_textbox">Nom</string>
+    <string name="password_textbox">Mot de passe</string>
+    <string name="username_label">Nom:</string>
+    <string name="password_label">Mot de passe:</string>
+    <string name="login_button">Se Connecter</string>
+    <string name="empty_password">Le mot de passe ne peut pas être vide !</string>
+    <string name="empty_username">Vous devez saisir votre nom !</string>
+    <string name="invalid_auth">Nom / Mot de passe Invalide</string>
+    <string name="success_auth">Authentification Effectué avec Succès !</string>
+    <string name="empty_passorusername">Votre nom ou votre mot de passe n\'est pas Invalide..</string>
+    <string name="noWifi">"Vous n'êtes pas connecté à Internet ! "</string>
+</resources>

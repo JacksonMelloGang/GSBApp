@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">gsb</string>
+
+    <string name="login_label">Login</string>
+    <string name="username_textbox">Username</string>
+    <string name="password_textbox">Password</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="login_button">Login</string>
+    <string name="empty_password">Password Can\'t be Empty</string>
+    <string name="empty_username">Username Can\'t be Empty</string>
+    <string name="invalid_auth">Invalid Username / Password</string>
+    <string name="success_auth">Successfully Authed</string>
+    <string name="empty_passorusername">Username / Password is Empty !</string>
+    <string name="noWifi">Not Connected</string>
+</resources>
