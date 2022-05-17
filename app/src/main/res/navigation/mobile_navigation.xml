@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/rapports2">
+    <fragment
+        android:id="@+id/rapports2"
+        android:name="fr.askyna.gsb.ui.rapports"
+        android:label="fragment_rapports"
+        tools:layout="@layout/fragment_rapports" >
+        <action
+            android:id="@+id/action_rapports2_to_newrapports2"
+            app:destination="@id/newrapports" />
+    </fragment>
+    <fragment
+        android:id="@+id/newrapports"
+        android:name="fr.askyna.gsb.ui.newrapports"
+        android:label="fragment_newrapports"
+        tools:layout="@layout/fragment_newrapport" />
+    <fragment
+        android:id="@+id/medicament2"
+        android:name="fr.askyna.gsb.ui.medicament"
+        android:label="fragment_medicament"
+        tools:layout="@layout/fragment_medicaments" >
+        <action
+            android:id="@+id/action_medicament2_to_infomedicament"
+            app:destination="@id/infomedicament" />
+    </fragment>
+    <fragment
+        android:id="@+id/praticien"
+        android:name="fr.askyna.gsb.ui.praticien"
+        android:label="fragment_praticien"
+        tools:layout="@layout/fragment_praticiens" />
+    <fragment
+        android:id="@+id/infomedicament"
+        android:name="fr.askyna.gsb.ui.infomedicament"
+        android:label="fragment_infomedicament"
+        tools:layout="@layout/fragment_infomedicament" />
+</navigation>
