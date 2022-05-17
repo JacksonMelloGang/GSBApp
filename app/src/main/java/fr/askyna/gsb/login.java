@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -25,12 +26,10 @@ public class login extends AppCompatActivity {
     private static TextView password_TV;
     private static TextView text_info;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         Button login_button = (Button) findViewById(R.id.login_button);
         username_TV = findViewById(R.id.username_input);
         password_TV = findViewById(R.id.password_input);
@@ -45,11 +44,10 @@ public class login extends AppCompatActivity {
         }
         */
 
-
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LoginController LC = new LoginController();
+                LoginController LC = new LoginController(view.getContext());
 
                 String username = username_TV.getText().toString();
                 String password = password_TV.getText().toString();
@@ -64,7 +62,6 @@ public class login extends AppCompatActivity {
                 }
 
                 LC.execute(username, password);
-
             }
         });
     }
@@ -81,6 +78,11 @@ public class login extends AppCompatActivity {
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public boolean isTaskRoot() {
+        return super.isTaskRoot();
     }
 
     public static Button getLogin_button() {

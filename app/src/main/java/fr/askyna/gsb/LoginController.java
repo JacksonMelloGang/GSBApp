@@ -1,5 +1,7 @@
 package fr.askyna.gsb;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 
 import org.apache.hc.client5.http.classic.methods.HttpPost;
@@ -28,13 +30,18 @@ public class LoginController extends AsyncTask<String, Integer, String> {
 
     private int statusreponse;
     private String detail;
+    private Context context;
+
+    public LoginController(Context context) {
+        this.context = context;
+    }
 
 
     @Override
     protected String doInBackground(String... strings) {
 
         // Create Http Post
-        HttpPost loginpost = new HttpPost("https://gsb-lycee.ga/apps/android/login.php");
+        HttpPost loginpost = new HttpPost("https://api.gsb-lycee.ga/android/login.php");
         ArrayList<NameValuePair> data = new ArrayList<NameValuePair>();
 
         // Add params into a list
@@ -96,6 +103,7 @@ public class LoginController extends AsyncTask<String, Integer, String> {
                 break;
             case 1:
                 login.getText_info().setText(R.string.success_auth);
+                context.startActivity(new Intent(context, MainActivity.class));
                 break;
         }
     }

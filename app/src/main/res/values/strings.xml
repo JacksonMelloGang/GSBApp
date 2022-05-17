@@ -13,4 +13,13 @@
     <string name="success_auth">Successfully Authed</string>
     <string name="empty_passorusername">Username / Password is Empty !</string>
     <string name="noWifi">Not Connected</string>
+    <string name="logo_image">logo image</string>
+    <string name="image_emplyee">image employee</string>
+    <string name="mail_label">email</string>
+    <string name="name_label">Nom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_medicament">Drugs</string>
+    <string name="menu_praticien">Practitioner</string>
+    <string name="menu_rapport">Report</string>
+    <string name="hello_blank_fragment">AA</string>
 </resources>

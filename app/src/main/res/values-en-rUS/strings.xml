@@ -12,4 +12,13 @@
     <string name="invalid_auth">"Invalid Username / Password "</string>
     <string name="success_auth">Successfully Authed</string>
     <string name="noWifi">Not Connected</string>
+    <string name="logo_image">logo image</string>
+    <string name="image_emplyee">image employee</string>
+    <string name="empty_passorusername">"Password is empty "</string>
+    <string name="mail_label">email</string>
+    <string name="name_label">Nom</string>
+    <string name="menu_medicament">Drugs</string>
+    <string name="menu_praticien">Practitioner</string>
+    <string name="menu_rapport">Report</string>
+    <string name="hello_blank_fragment">BB</string>
 </resources>
